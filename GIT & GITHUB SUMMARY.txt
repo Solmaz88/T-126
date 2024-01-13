@@ -1,0 +1,54 @@
+GIT & GITHUB SUMMARY
+
+git init: initialize a new git repository  //projeye yeni baslayinca oluyo bu 
+	Initialized empty Git repository in C:/Users/ercan/desktop/WQTest/.git/
+
+git add . : add everything to your staging area
+git add src/firstpackage/FirstClass.java: add to stagine only one file      // dosyayi stage almak paketlemek 
+	1 file changed, 1 insertion(+)
+
+git log: will give you history of your commits
+	commit 4ab16ba43428cc1b08e019c72677bbe9d5344d8e (HEAD -> master) // hata ve ayarlarla ilgili 
+	Author: ercan <ercan@gmail.com>
+	Date: Sat Dec 17 10:58:37 2022 -0400
+
+git commit -m "first commit": this will create a new commit(version ) on local git repository // versiyonlamam kolinin uzerine icinde ne var onu yaziyruz 
+
+git show 1dbd2 // git show id 
+
+git status: displays the state of the working directory and the staging area. It lets you see which changes have been staged, which haven't, and which files aren't being tracked by Git. // statusunu goruyoruz 
+
+git remote add origin https://github.com/234ercan/WQTest.git: create remote git repo for the first time
+	link for repo: https://github.com/234ercan/WQTest.git 
+
+git push -u origin master: first time you push your updates to remote repo  gonder demek ama gonderirken bi hata alinabilir bunun iicn asagidaki koplayaip yapistir 
+	* [new branch] master -> master
+	* main
+git push --set-upstream origin ercan: this will create your local branch on the remote for the first time git hub gonderiyoruz 
+
+git push: sends your local updates to remote repo
+
+git branch name: this will create a new branch  yeni branc olusturma bizim isimimizle 
+
+git branch: this will show me branches and the header branch  hangi brancin uzerinde calistigimiz 
+
+git checkout branchName: this will switch to another branch bir branctan oburune gecis 
+
+git pull: this will bring all updates to your local git and merge them to your project.  github vs kod cekmek iicn kullanilir 
+
+git fetch: this will bring all updates to your local git
+
+git merge: it will merge them to your project. bir brachtan oburune kodlari kopyaliyor 
+
+pull = fetch + merge
+
+change directory
+	cd C:/Users/ercan/desktop/WQTest/.git/  path degistirmek icin 
+
+PR: Pull Request
+	Go to pull requests => New Pull Request =>   master <- ercan  => create a pull request => create pull request => Merge pull request => confirm merge  nasil yapildigini anlatiyor nerden nereye gondercegini anlatiyor 
+
+Stashing: git stash: saves them temporarly to get them back  push yapmak istemeyip degisikligi on hafizada tutmak icin kulanilir 
+git stash apply stash@{2}
+
+.gitignore : we use this file to hide certain files and folders from remote collaborators  //cok dosya varsa securyty dosyalar veya baska ozel seyleri git ingore ile proje icinde gozukmesini engelleriz 
